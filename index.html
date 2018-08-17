@@ -12,10 +12,15 @@
     <div ng-controller="myController">
             {{firstname}}
             {{lastname}}
-           <p>{{fullname()}}</p> 
+           <p>original :{{fullname()}}</p> 
+           <p>after custom filter: {{fullname_love()}}</p>
            <input type="text" ng-model="firstname">
            <input type="text" ng-model="lastname">
            <input type="text" ng-model="firstname" ng-blur="upper();">
+           <p>Fav color:</p>
+           <div> 
+           <input type="text" style="background-color:{{color}}"  ng-model="color">
+           </div>
          
     </div>
        
